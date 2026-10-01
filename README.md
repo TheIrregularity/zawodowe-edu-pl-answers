@@ -1,6 +1,6 @@
 # zawodowe.edu.pl Answers Fetcher
 Script for retrieving answers for exams at zawodowe.edu.pl
-##Usage
+## Usage
 1. Copy and paste the following code into your browser's console:
     ```javascript
     fetch('https://raw.githubusercontent.com/TheIrregularity/zawodowe-edu-pl-answers/main/script.js')
