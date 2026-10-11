@@ -9,7 +9,7 @@ function getAns(e){
         .then(response => response.text())
         .then(rawPage => {
             const page = parser.parseFromString(rawPage, 'text/html')
-            const ansId = page.querySelector('button[data-is-correct=true]').getAttribute('data-answer')
-            document.querySelector(`button[data-answer="${ansId}"]`).style['color'] = "blue"
+            const ansId = page.querySelector('div[data-is-correct=true]').getAttribute('data-answer')
+            document.querySelector(`div[data-answer="${ansId}"]`).style['color'] = "blue"
 })})}
 document.querySelectorAll('button.v2-qbtn').forEach(btn => btn.addEventListener('click', getAns))
