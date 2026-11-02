@@ -29,10 +29,10 @@ function solve(){
         
 
         if(n>1){
-            setTimeout(() => loop(n-1), (Math.random() * (53 - 42) + 42) * 1000);
+            setTimeout(() => loop(n-1), (Math.random() * (48 - 42) + 42) * 1000);
     }}
 
-    loop(40)
+    setTimeout(() => loop(40), (Math.random() * (48 - 42) + 42) * 1000);
 
 }
 solve()
